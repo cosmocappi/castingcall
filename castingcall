@@ -1,0 +1,16 @@
+import random
+
+models = []
+shape = 15
+skin = 9
+other = [4,6,5,7,8,117,8,25,9,3,10,8,6,18,14,6,8,6,5,3,3,10,8,7,9,6,10,12,10,2,3,10,28,11,3,3,8,132,15,37,6,3,6,39]
+
+for i in range(shape):
+	for j in range(skin):
+		models.append([i+1,j+1])
+
+for i in range(len(models)):
+	for j in range(len(other)):
+		models[i].append(random.randint(1,other[j]))
+
+print(models)
